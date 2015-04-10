@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/greenwallpaper"
+    android:orientation="vertical" >
+
+    <Space
+        android:id="@+id/Space1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/category"
+        android:layout_gravity="fill_vertical" />
+
+    <Button
+        android:id="@+id/thalassery"
+        android:layout_width="212dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/malabar"
+        android:layout_alignLeft="@+id/hyderabad"
+        android:layout_alignRight="@+id/hyderabad"
+        android:layout_marginBottom="18dp"
+        android:layout_weight="0.21"
+        android:text="Thalassery Biriyani" />
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_above="@+id/thalassery"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/recipepage" />
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Rice Recipe"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/malabar"
+        android:layout_width="174dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/kozhi"
+        android:layout_alignLeft="@+id/hyderabad"
+        android:layout_alignRight="@+id/thalassery"
+        android:layout_marginBottom="19dp"
+        android:layout_weight="0.21"
+        android:text="Malabari Biriyani" />
+
+    <Button
+        android:id="@+id/kozhi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/hyderabad"
+        android:layout_alignLeft="@+id/malabar"
+        android:layout_alignRight="@+id/malabar"
+        android:layout_marginBottom="24dp"
+        android:text="Kozhikodan Biriyani" />
+
+    <Button
+        android:id="@+id/hyderabad"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="43dp"
+        android:layout_weight="0.30"
+        android:text="Hyderabadi Biriyani" />
+
+</RelativeLayout>

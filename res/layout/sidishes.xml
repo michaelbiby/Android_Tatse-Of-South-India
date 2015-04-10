@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/greenwallpaper" >
+    
+    <Space
+        android:id="@+id/Space1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/category"
+        android:layout_gravity="fill_vertical" />
+
+    <Button
+        android:id="@+id/korma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image1"
+        android:layout_centerHorizontal="true"
+        android:text="Hyderabadi Mutton Korma" />
+
+    <Button
+        android:id="@+id/tikka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/korma"
+        android:layout_below="@+id/korma"
+        android:text="Chennaiyan Chicken Tikka" />
+
+    <Button
+        android:id="@+id/molee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tikka"
+        android:layout_alignRight="@+id/tikka"
+        android:layout_below="@+id/tikka"
+        android:text="Special Kerala Fish Molee" />
+
+    <Button
+        android:id="@+id/chettinad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/molee"
+        android:layout_alignRight="@+id/molee"
+        android:layout_below="@+id/molee"
+        android:text="Chettinad Chicken Curry" />
+
+    <TextView
+        android:id="@+id/side"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="Sidishes Recipe"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/side"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/sidish" />
+
+</RelativeLayout>
